@@ -1,0 +1,71 @@
+<div>
+
+
+
+
+    <br>
+    <!-- Button to view all notes -->
+    <div class="container">
+        <a href="/" class="btn btn-info">View All Notes</a>
+    </div>
+
+    <br>
+    <h2>Update Note</h2>
+    <p>Use the below form to update the note</p>
+
+    <br>
+    <!-- Form to add new note -->
+    <form method="POST">
+
+        <label for="title">Title</label>
+        <br>
+        <input type="hidden" name="id" value="">
+        <input type="text" name="title" value="" placeholder="eg: New Note">
+        <br>
+        <br>
+
+        <label for="note">Note</label>
+        <br>
+        <textarea name="note" id="note" cols="30" rows="5"></textarea>
+        <br>
+        <br>
+
+        <div>
+            <label class="fw-bold">Important</label>
+
+            <br>
+            <div>
+                <input type="radio" name="important" value="Important" id="important" checked>
+                <label for="important">Important</label>
+            </div>
+            <div>
+                <input type="radio" name="important" value="Not Important" id="notimportant">
+                <label for="notimportant">Not Important</label>
+            </div>
+            <br>
+        </div>
+
+        <div>
+            <label class="fw-bold">Urgent</label>
+
+            <br>
+            <div>
+                <input type="radio" name="urgent" value="Urgent" id="urgent" checked>
+                <label for="urgent">Urgent</label>
+            </div>
+            <div>
+                <input type="radio" name="urgent" value="Not Urgent" id="noturgent">
+                <label for="noturgent">Not Urgent</label>
+            </div>
+            <br>
+        </div>
+
+        <br>
+        <button type="submit" class="btn btn-primary">Save</button>
+
+    </form>
+
+
+
+
+</div>
